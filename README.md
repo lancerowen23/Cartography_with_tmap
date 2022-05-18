@@ -1,2 +1,2 @@
 # R_User_Group
-This project is intended to support tutorials in R. 
+This project served to demonstrate how to create a choropleth map using R for a group of GIS Analysts who wanted to learn more about using R as an alternative to proprietary GIS platforms. A major focus of the code was specifying arguments to create a sophisiticated looking static map of publishable quality. 

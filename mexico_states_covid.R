@@ -36,15 +36,12 @@ bg <- world[world$GEOUNIT %in% c("United States of America",
                                  "Honduras", 
                                  "Nicaragua"),]
 
-#create background layer in light grey
+#create background layer in light grey and set bbox to extent of Mexico data
 background <- tm_shape(bg, 
                        bbox = st_bbox(mex_data) + 
   tm_fill(palette = "grey60")  +
   tm_borders(col = "grey90",
              lwd = .5)
-
-#set variable for bounding box dimension matching data extent
-bbox_mex <- st_bbox(mex_data)
 
 #compile final map
 final_map <- tm_shape(mex_data) + 
